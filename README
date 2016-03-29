@@ -1,0 +1,10 @@
+Create a folder in public_html named "applications"
+
+Give full permissions on /rose:
+chmod -R 777 rose
+
+Install with composer:
+curl -sS https://getcomposer.org/installer | php -- && ./composer.phar install --prefer-dist
+
+
+

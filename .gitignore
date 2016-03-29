@@ -1,0 +1,10 @@
+logs/
+public_html/exceptions_log.txt
+public_html/.htaccess
+public_html/.htpasswd
+public_html/applications/
+public_html/tmp/
+config/
+composer.phar
+composer.lock
+vendor/

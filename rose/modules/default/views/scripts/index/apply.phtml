@@ -1,0 +1,51 @@
+<div class="container-fluid">
+<form id="application" class="" method="POST" style="">
+    <div class="row">
+        <div class="col-sm-12">
+            <div><h3>New Character Application</h3></div>
+            <div class="form-group form-group-sm">
+                <label class="">Name</label>
+                <?=$this->form->name->renderViewHelper()?>
+                <?=$this->form->name->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Race</label>
+                <?=$this->form->race->renderViewHelper()?>
+                <?=$this->form->race->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Gender</label>
+                <?=$this->form->gender->renderViewHelper()?>
+                <?=$this->form->gender->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Ability</label>
+                <?=$this->form->ability->renderViewHelper()?>
+                <?=$this->form->ability->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Personality</label>
+                <?=$this->form->personality->renderViewHelper()?>
+                <?=$this->form->personality->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Description</label>
+                <?=$this->form->description->renderViewHelper()?>
+                <?=$this->form->description->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">History</label>
+                <?=$this->form->history->renderViewHelper()?>
+                <?=$this->form->history->renderErrors()?>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="">Original Character</label>
+                <?=$this->form->oc->renderViewHelper()?>
+                <?=$this->form->oc->renderErrors()?>
+            </div>
+        </div>
+    </div>
+    <button style="display: inline" type="submit" id="application_submit" class="btn btn-primary">Apply</button>
+    <a href="/default/index/search" class="btn btn-primary" role="button">Character Lookup</a>
+</form>
+</div>
