@@ -1,10 +1,10 @@
 <?php
 
-class Installfest_Controller_Plugin_Authorization extends Zend_Controller_Plugin_Abstract
+class Rose_Controller_Plugin_Authorization extends Zend_Controller_Plugin_Abstract
 {
     public function preDispatch(Zend_Controller_Request_Abstract $request)
     {
-        $authorization_service = Installfest_StaticLocator::getInstance()
+        $authorization_service = Rose_StaticLocator::getInstance()
             ->getAuthorizationService();
 
         $layout = Zend_Layout::getMvcInstance();

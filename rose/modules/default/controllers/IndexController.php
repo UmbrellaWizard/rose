@@ -24,7 +24,6 @@ class IndexController extends Zend_Controller_Action
                     $this->_redirect('/default/index/submit/?apply='.$apply);
                 } catch (Exception $e) {
                     echo '<b>Error</b> Submission failed.';
-                    $Zend_Debug::dump($e->getMessage());
                 }
             }
         }
@@ -34,15 +33,6 @@ class IndexController extends Zend_Controller_Action
     }
     public function submitAction()
     {
-          $apply = $this->getRequest()->getParam('apply');
-
-          if ($apply == "success") {
-              echo "Application submission was successful";
-          } else if ($apply == "fail") {
-              echo "Application submission was unsuccessful";
-              echo $apply;
-          } else {
-              echo "Application for " . $apply . " already exists!";
-          }
+        $this->view->apply = $this->getRequest()->getParam('apply');
     }
 }

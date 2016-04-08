@@ -1,5 +1,14 @@
 <div class="container-fluid">
     <div class="row">
+        <div class="col-sm-12 apply-button">
+            <?php if ($this->apply == "success"): ?>
+                Application submission was successful.
+            <?php elseif ($this->apply == "fail"): ?>
+                Application submission was unsuccessful";
+            <?php else: ?>
+                Application for <?=$this->apply?> already exists!
+            <?php endif ?>
+        </div>
         <div class="col-sm-12">
             <a href="/default/index/apply" class="btn btn-primary" role="button">New application</a>
         </div>
